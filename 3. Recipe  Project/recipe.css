@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height:100px;
+    width: 100%;
+    overflow-x: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 63%, rgba(0,212,255,1) 100%);
+    display: flex;  
+    justify-content: space-around;
+    /* align-items: center; */
+    box-shadow: 5px 5px 10px aquamarine;
+    
+
+}
+
+.navlist img{
+    height: 30px;
+    width: 30px;
+}
+.navlist a{
+    color: #fff;
+    text-decoration: none;
+    
+
+}
+.navlist{
+   display: flex;
+   justify-content: space-around; 
+   gap: 50px;
+   align-items: center;
+    
+}
+
+.container{
+    /* height: 1500px;
+    width: 60vw; */
+   
+    /* gap: 30px; */
+    display: flex;
+    justify-content: center;
+
+}
+.saman{
+    height: 100vh;
+    width: 75%;
+    border: 5px solid black;
+    margin: 0 30px;
+    padding: 30px;
+    border:0px 5px 5px 5px ;
+}
+
+/* .items{
+    display: flex;
+    /* justify-content: space-around; */
+
+.items1{
+    display: flex;
+    justify-content: space-around;
+}
+.items2{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    /* width: 30%; */
+    position: relative;
+    overflow: hidden;
+}
+
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 25px;
+    opacity: 0;
+}
+.img1:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.img1 img{
+    filter: grayscale(100%);
+}
+.img1:hover img{
+    filter: grayscale(0%);
+}
+
+.img1:hover figcaption{
+    opacity: 1;
+}
