@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lobster', cursive;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+$duration: 4s;
+
+.rotate {
+  position: relative;
+  color: aquamarine;
+  font-size: 118px;
+  filter: blur(2px) contrast(4);
+  
+  & > div {
+    position: absolute;
+    width: var(--size); height: var(--size);
+    background-color: #000;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    animation: twist $duration var(--delay) infinite ease-in-out;
+    
+    &::after {
+      content: 'Rotate';
+      position: absolute;
+      left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    @keyframes twist {
+      0% { transform: translate(-50%, -50%) rotateZ(0deg); }
+      50%, 100% { transform: translate(-50%, -50%) rotateZ(360deg); }
+    }      
+    
+    $count: 42;
+    @for $i from 0 to $count {
+      &:nth-child(#{$i + 1}) {
+        --size: #{($count - $i) * 7px};
+        --delay: #{($duration * 0.5) / $count * ($count - $i)};
+      }
+    }
+  }
+}

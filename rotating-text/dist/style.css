@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.rotate {
+  position: relative;
+  color: aquamarine;
+  font-size: 118px;
+  filter: blur(2px) contrast(4);
+}
+.rotate > div {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background-color: #000;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-animation: twist 4s var(--delay) infinite ease-in-out;
+          animation: twist 4s var(--delay) infinite ease-in-out;
+}
+.rotate > div::after {
+  content: "Rotate";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@-webkit-keyframes twist {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  50%, 100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+@keyframes twist {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  50%, 100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+.rotate > div:nth-child(1) {
+  --size: 294px;
+  --delay: 2s;
+}
+.rotate > div:nth-child(2) {
+  --size: 287px;
+  --delay: 1.9523809524s;
+}
+.rotate > div:nth-child(3) {
+  --size: 280px;
+  --delay: 1.9047619048s;
+}
+.rotate > div:nth-child(4) {
+  --size: 273px;
+  --delay: 1.8571428571s;
+}
+.rotate > div:nth-child(5) {
+  --size: 266px;
+  --delay: 1.8095238095s;
+}
+.rotate > div:nth-child(6) {
+  --size: 259px;
+  --delay: 1.7619047619s;
+}
+.rotate > div:nth-child(7) {
+  --size: 252px;
+  --delay: 1.7142857143s;
+}
+.rotate > div:nth-child(8) {
+  --size: 245px;
+  --delay: 1.6666666667s;
+}
+.rotate > div:nth-child(9) {
+  --size: 238px;
+  --delay: 1.619047619s;
+}
+.rotate > div:nth-child(10) {
+  --size: 231px;
+  --delay: 1.5714285714s;
+}
+.rotate > div:nth-child(11) {
+  --size: 224px;
+  --delay: 1.5238095238s;
+}
+.rotate > div:nth-child(12) {
+  --size: 217px;
+  --delay: 1.4761904762s;
+}
+.rotate > div:nth-child(13) {
+  --size: 210px;
+  --delay: 1.4285714286s;
+}
+.rotate > div:nth-child(14) {
+  --size: 203px;
+  --delay: 1.380952381s;
+}
+.rotate > div:nth-child(15) {
+  --size: 196px;
+  --delay: 1.3333333333s;
+}
+.rotate > div:nth-child(16) {
+  --size: 189px;
+  --delay: 1.2857142857s;
+}
+.rotate > div:nth-child(17) {
+  --size: 182px;
+  --delay: 1.2380952381s;
+}
+.rotate > div:nth-child(18) {
+  --size: 175px;
+  --delay: 1.1904761905s;
+}
+.rotate > div:nth-child(19) {
+  --size: 168px;
+  --delay: 1.1428571429s;
+}
+.rotate > div:nth-child(20) {
+  --size: 161px;
+  --delay: 1.0952380952s;
+}
+.rotate > div:nth-child(21) {
+  --size: 154px;
+  --delay: 1.0476190476s;
+}
+.rotate > div:nth-child(22) {
+  --size: 147px;
+  --delay: 1s;
+}
+.rotate > div:nth-child(23) {
+  --size: 140px;
+  --delay: 0.9523809524s;
+}
+.rotate > div:nth-child(24) {
+  --size: 133px;
+  --delay: 0.9047619048s;
+}
+.rotate > div:nth-child(25) {
+  --size: 126px;
+  --delay: 0.8571428571s;
+}
+.rotate > div:nth-child(26) {
+  --size: 119px;
+  --delay: 0.8095238095s;
+}
+.rotate > div:nth-child(27) {
+  --size: 112px;
+  --delay: 0.7619047619s;
+}
+.rotate > div:nth-child(28) {
+  --size: 105px;
+  --delay: 0.7142857143s;
+}
+.rotate > div:nth-child(29) {
+  --size: 98px;
+  --delay: 0.6666666667s;
+}
+.rotate > div:nth-child(30) {
+  --size: 91px;
+  --delay: 0.619047619s;
+}
+.rotate > div:nth-child(31) {
+  --size: 84px;
+  --delay: 0.5714285714s;
+}
+.rotate > div:nth-child(32) {
+  --size: 77px;
+  --delay: 0.5238095238s;
+}
+.rotate > div:nth-child(33) {
+  --size: 70px;
+  --delay: 0.4761904762s;
+}
+.rotate > div:nth-child(34) {
+  --size: 63px;
+  --delay: 0.4285714286s;
+}
+.rotate > div:nth-child(35) {
+  --size: 56px;
+  --delay: 0.380952381s;
+}
+.rotate > div:nth-child(36) {
+  --size: 49px;
+  --delay: 0.3333333333s;
+}
+.rotate > div:nth-child(37) {
+  --size: 42px;
+  --delay: 0.2857142857s;
+}
+.rotate > div:nth-child(38) {
+  --size: 35px;
+  --delay: 0.2380952381s;
+}
+.rotate > div:nth-child(39) {
+  --size: 28px;
+  --delay: 0.1904761905s;
+}
+.rotate > div:nth-child(40) {
+  --size: 21px;
+  --delay: 0.1428571429s;
+}
+.rotate > div:nth-child(41) {
+  --size: 14px;
+  --delay: 0.0952380952s;
+}
+.rotate > div:nth-child(42) {
+  --size: 7px;
+  --delay: 0.0476190476s;
+}
