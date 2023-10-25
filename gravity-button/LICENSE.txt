@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2023 Pranjal Bhadu (https://codepen.io/bhadupranjal/pen/vYLZYqQ)
+Copyright (c) 2023 Amit Sheen (https://codepen.io/amit_sheen/pen/LYXPVKV)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
