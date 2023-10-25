@@ -1,0 +1,31 @@
+.wrapper{
+    height: 80vh;
+    width: 50vw;
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#roll1{
+    height: 50vh;
+    width:25vw
+}
+.info{
+    height: 50vh;
+    background-color: rgb(146, 38, 200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.silpa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.niche{
+    display: flex;
+}

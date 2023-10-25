@@ -1,0 +1,45 @@
+.wrapper{
+    height: 80vh;
+    width: 60vw;
+    border: 5px solid #04aa86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    height: 70vh;
+    width: 24vw;
+    border: 5px solid rgb(169, 12, 221);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container h3,p{
+    text-align: center;
+}
+
+.box{
+    background-color: #04aa86;
+    height: 80px;
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.box img{
+    height: 50px;
+    width: 50px;
+}
+.item{
+    height: 80px;
+    width: 80px;
+}
+.box1{
+    background-color: crimson;
+    width: 20vw;
+    text-align: center;
+}
